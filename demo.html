@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        html {
+            font-size: 62.5%;
+        }
+        
+        body {
+            background-color: #F5F5F5;
+        }
+        
+        .banner_top {
+            width: 100%;
+            height: 22rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .banner_top img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .abs {
+            position: relative;
+            top: -4rem;
+            padding: 0rem 2rem;
+        }
+        
+        .abs span:nth-child(1) {
+            float: left;
+            color: white;
+            border: .1rem solid white;
+            padding: .2rem .4rem;
+            font-size: 1.4rem;
+            border-radius: .3rem;
+        }
+        
+        .abs span:nth-child(2) {
+            float: right;
+            color: white;
+            background: rgba(8, 8, 8, 0.6);
+            font-size: 1.6rem;
+            padding: 0rem 1rem;
+            border-radius: 4rem;
+            margin-top: .5rem;
+        }
+        
+        .content_cent {
+            width: 100%;
+            height: 20rem;
+            padding: 0rem 2.5rem;
+            box-sizing: border-box;
+            border-bottom: .1rem solid #ccc;
+            background-color: white;
+            overflow: hidden;
+        }
+        
+        .content_cent p {
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+        
+        .content_er {
+            overflow: hidden;
+        }
+        
+        .content_er>span:nth-child(1) {
+            float: left;
+            font-size: 1.6rem;
+        }
+        
+        .content_er>span:nth-child(1) span {
+            font-size: 2rem;
+            color: #B1474C;
+            font-weight: bolder;
+        }
+        
+        .content_er>span:nth-child(2) {
+            float: right;
+            width: 2rem;
+            height: 3rem;
+            background: url(./img/phone.png) no-repeat;
+            background-size: 90%;
+        }
+        
+        .content_san {
+            color: #ccc;
+            font-size: 1.4rem;
+            height: 3rem;
+            line-height: 3rem;
+            display: inline-block;
+        }
+        
+        .content_si span {
+            margin-right: 2rem;
+            background-color: #EFF3F7;
+            color: #AAB3BB;
+        }
+        
+        .text {
+            width: 100%;
+            height: auto;
+            margin-top: 2rem;
+            border-bottom: .1rem solid #ccc;
+            border-top: .1rem solid #ccc;
+            background-color: white;
+        }
+        
+        .wenzi {
+            width: 100%;
+            height: 6rem;
+            line-height: 6rem;
+            border-bottom: .1rem solid #ccc;
+            padding: 0rem 3rem;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        
+        .wenzi>span:nth-child(1) {
+            float: left;
+            width: 50%;
+            font-size: 1.8rem;
+            font-family: "黑体";
+        }
+        
+        .wenzi>span:nth-child(1) span {
+            color: #BFBFBF;
+        }
+        
+        .wenzi>span:nth-child(2) {
+            float: left;
+            width: 50%;
+            font-size: 1.8rem;
+            font-family: "黑体";
+        }
+        
+        .wenzi>span:nth-child(2) span {
+            color: #BFBFBF;
+        }
+        
+        #wen span {
+            width: 100%;
+        }
+        
+        #we {
+            text-align: center;
+            color: #BFBFBF;
+            font-size: 1.9rem;
+        }
+        
+        .tese {
+            width: 100%;
+            height: 23rem;
+            font-size: 1.6rem;
+            margin-top: 2rem;
+            border-bottom: .1rem solid #ccc;
+            border-top: .1rem solid #ccc;
+            background-color: white;
+            padding: 0rem 1rem;
+            box-sizing: border-box;
+        }
+        
+        .tese p:nth-child(1) {
+            font-size: 2rem;
+            color: #E2A04B;
+            font-weight: bolder;
+            padding: 1rem .5rem;
+            border-bottom: .1rem solid #ccc;
+        }
+        
+        .tese p:nth-child(2) {
+            line-height: 2.7rem;
+        }
+        
+        .tese p:nth-child(3) {
+            border-top: .1rem solid #ccc;
+            text-align: center;
+            padding: 1rem 0rem;
+            color: #666;
+        }
+        
+        .huxing {
+            width: 100%;
+            height: 35rem;
+            background-color: white;
+            padding: 0rem 1rem;
+            box-sizing: border-box;
+            margin-top: 2rem;
+        }
+        
+        .geju {
+            width: 100%;
+            height: 14rem;
+            border-bottom: .1rem solid #ccc;
+        }
+        
+        .huxing>p {
+            font-size: 2rem;
+            color: #E2A04B;
+            font-weight: bolder;
+            padding: 1rem .5rem;
+            border-bottom: .1rem solid #ccc;
+        }
+        
+        .geju img {
+            height: 65%;
+            padding: 2rem 0rem;
+            float: left;
+        }
+        
+        .geju>div {
+            width: 20rem;
+            float: left;
+            padding: 1rem .7rem;
+            padding: 2rem 1rem;
+            box-sizing: border-box;
+            line-height: 3rem;
+        }
+        
+        .dige>span:nth-child(1) {
+            font-size: 1.8rem;
+            font-weight: bolder;
+        }
+        
+        .dige p span {
+            margin-right: 1.5rem;
+            color: #666;
+            background-color: #F4FCFF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner_top">
+        <img src="./img/img.png" alt="">
+        <div class="abs">
+            <span>地图</span>
+            <span>1/5</span>
+        </div>
+    </div>
+    <div class="content_cent">
+        <p>天鹅湾小区精装两居，满五唯一，业主换房急售</p>
+        <div class="content_er"><span><span>576</span>万元（单价：46327元/平）</span>
+            <span></span>
+        </div>
+        <span class="content_san">挂牌时间2015年6月20日</span>
+        <div class="content_si"><span>学区房</span><span>独房</span><span>满五唯一</span></div>
+    </div>
+    <div class="text">
+        <div class="wenzi">
+            <span><span>户型：</span>3室2厅</span>
+            <span><span>面积：</span>100平</span>
+        </div>
+        <div class="wenzi">
+            <span><span>楼层：</span>中层楼</span>
+            <span><span>朝向：</span>朝西</span>
+        </div>
+        <div class="wenzi">
+            <span><span>装修：</span>精装</span>
+            <span><span>楼型：</span>塔楼</span>
+        </div>
+        <div class="wenzi">
+            <span><span>年底：</span>2004年</span>
+            <span><span>区域：</span>西二旗</span>
+        </div>
+        <div class="wenzi">
+            <span><span>首付：</span>123万</span>
+            <span><span>月供：</span>15683元</span>
+        </div>
+        <div class="wenzi" id="wen">
+            <span><span>地铁：</span>离西二旗地铁站800米</span>
+        </div>
+        <div class="wenzi" id="wen">
+            <span><span>小区：</span>珠江帝景</span>
+        </div>
+        <div class="wenzi" id="wen">
+            <span><span>学校：</span>北京市第二实验中学</span>
+        </div>
+        <div class="wenzi" id="we">
+            更多房源信息
+        </div>
+    </div>
+    <div class="tese">
+        <p>房源特色</p>
+        <p>小区环境优雅，虽处闹市中(小区南200米有 美廉美超市、西30米有华联商场、星美国际 影城、东北角就是大中电器、小区东100米有 汇佳幼儿园、昌平实验- -小，昆泰国际大酒...
+        </p>
+        <p>更多特色</p>
+    </div>
+    <div class="huxing">
+        <p>户型分间</p>
+        <div class="geju">
+            <img src="./img/img5.png" alt="">
+            <div class="dige">
+                <span>当前格局</span><br>
+                <span>分间信息：客厅 25平米 南北通...</span>
+                <p><span>南北通透</span><span>全明格局</span>
+                </p>
+            </div>
+        </div>
+        <div class="geju">
+            <img src="./img/img7.png" alt="">
+            <div class="dige">
+                <span>当前格局</span><br>
+                <span>分间信息：客厅 25平米 南北通...</span>
+                <p><span>南北通透</span><span>全明格局</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
